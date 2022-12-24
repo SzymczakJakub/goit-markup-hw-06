@@ -688,14 +688,40 @@ body {
   flex-direction: column;
   gap: 4px;
   margin-top: 10px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.input-modal {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.input-modal:hover,
+.input-modal:focus {
+  border-color: rgba(33, 150, 243, 1);
 }
 .input-modal {
   width: 448px;
   height: 40px;
 }
-.input-comment {
+.comment:hover,
+.comment:focus {
+  border-color: rgba(33, 150, 243, 1);
+}
+.modal-icon-position {
+  position: relative;
+}
+.modal-svg {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+}
+.comment {
   width: 448px;
   height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.input-comment {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -703,6 +729,14 @@ body {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  border: none;
+  margin: 12px 16px;
+  width: 416px;
+  height: 96px;
+}
+.input-comment:hover,
+.input-comment:focus {
+  border-color: rgba(33, 150, 243, 1);
 }
 .name {
   font-family: "Roboto";
@@ -714,42 +748,42 @@ body {
   color: #757575;
 }
 
-.privacy-policy{
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #757575;
-margin-left: 17px;
+.privacy-policy {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 17px;
+  position: relative;
 }
 
-.privacy-policy a{
-  color:var(--blue)
+.privacy-policy a {
+  color: var(--blue);
 }
-.privacy{
+.privacy {
   margin-top: 20px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
 }
 
-.send-modal{
-width:200px;
-height:50px;
-color:var(--white);
-border:none;
-background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-margin-top: 30px;
-text-align: center;
-cursor: pointer;
-align-content: center;
-margin-left: 124px;
+.send-modal {
+  width: 200px;
+  height: 50px;
+  color: var(--white);
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+  align-content: center;
+  margin-left: 124px;
 }
 .header-modal {
   font-family: "Roboto";
