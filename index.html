@@ -649,27 +649,24 @@
             <div class="input-name">
               <label for="fname" class="name">Imie </label>
               <div class="modal-icon-position">
+                <input id="fname" class="input-modal" name="name" />
                 <svg class="modal-svg" width="12px" height="12px">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
-                <input id="fname" class="input-modal" name="name" />
               </div>
             </div>
             <div class="input-name">
               <label for="phone" class="name">Telefon </label>
               <div class="modal-icon-position">
+                <input id="phone" type="tel" class="input-modal" name="phone" />
                 <svg class="modal-svg" width="12px" height="12px">
                   <use href="./images/icons.svg#icon-Vector1"></use>
                 </svg>
-                <input id="phone" type="tel" class="input-modal" name="phone" />
               </div>
             </div>
             <div class="input-name">
               <label for="email-addres" class="name">Email </label>
               <div class="modal-icon-position">
-                <svg class="modal-svg" width="12px" height="12px">
-                  <use href="./images/icons.svg#icon-Vector2"></use>
-                </svg>
                 <input
                   id="email-addres"
                   type="email"
@@ -677,6 +674,9 @@
                   name="email"
                   type="email"
                 />
+                <svg class="modal-svg" width="12px" height="12px">
+                  <use href="./images/icons.svg#icon-Vector2"></use>
+                </svg>
               </div>
             </div>
             <div class="comment-name">
@@ -690,19 +690,22 @@
                 ></textarea>
               </div>
             </div>
-            <div class="privacy">
-              <label id="check" class="privacy-policy"
-                ><svg class="check" width="14px" height="14px">
-                  <use href="./images/icons.svg#icon-Vector3" ></use>
-                </svg>
-                <input for="check" type="checkbox"  />
-
-                Oświadczam iż akceptuję
-                <a href="#">Regulamin</a> i
-                <a href="#">Politykę Prywatności.</a>
+            
+              <label id="check" class="privacy-policy">
+                <input class="hidden-checkbox" for="check" type="checkbox" />
+                <div class="custom-checkbox">
+                  <svg class="custom-checkbox-img" width="16px" height="15px">
+                    <use href="./images/icons.svg#icon-Vector3" width="11px" height="8px" x="3" y="3"></use>
+                  </svg>
+                </div>
+                <span>
+                  Oświadczam iż akceptuję
+                  <a href="#">Regulamin</a> i
+                  <a href="#">Politykę Prywatności.</a></span
+                >
               </label>
               <button class="send-modal" type="submit">Wyślij</button>
-            </div>
+           
           </div>
         </form>
         <button type="button" class="close" data-modal-close>X</button>

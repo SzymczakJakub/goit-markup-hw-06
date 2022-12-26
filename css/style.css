@@ -704,7 +704,6 @@ body {
   border-color: rgba(33, 150, 243, 1);
 }
 
-
 .comment:hover,
 .comment:focus {
   border-color: rgba(33, 150, 243, 1);
@@ -718,9 +717,8 @@ body {
   gap: 4px;
   margin-top: 10px;
 }
-.modal-icon-position:hover
- {
-  fill: var(--blue); 
+.modal-icon-position:hover {
+  fill: var(--blue);
 }
 .modal-icon-position {
   position: relative;
@@ -777,29 +775,46 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   margin-left: 14px;
+  margin-top:20px;
   position: relative;
+  display:flex;
+  align-items: center;
+  gap:7px
+}
+.hidden-checkbox{
+  display:none
+}
+.custom-checkbox{
+  position: relative;
+  border:1px solid #212121;
+  border-radius: 2px;
+  width:16px;
+  height:15px;
+}
+
+.custom-checkbox-img{
+  position: absolute;
+  top:-1px;
+  left:-1px;
+  background-color: var(--blue);
+  opacity:0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hidden-checkbox:checked + .custom-checkbox > .custom-checkbox-img {
+  opacity:1
 }
 
 .privacy-policy a {
   color: var(--blue);
 }
-.privacy {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+
+
+
+.input-modal:hover + .modal-svg,
+.input-modal:focus + .modal-svg {
+  fill: var(--blue);
 }
-
-.check {
-  border: 1px solid;
-  position: absolute;
-  top: 5px;
-  background-color: var(--blue);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
 
 .send-modal {
   width: 200px;
